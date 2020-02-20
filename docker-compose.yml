@@ -3,7 +3,7 @@ services:
   dadbard-dev:
     build: 
         context: .
-        dockerfile: ./docker/docker.dockerfile
+        dockerfile: ./docker.dockerfile
     entrypoint: /bin/bash
     environment: 
       - R_CI=change_me
