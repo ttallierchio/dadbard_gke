@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  dadbard-dev:
+    build: 
+        context: .
+        dockerfile: ./docker/docker.dockerfile
+    entrypoint: /bin/bash
+    environment: 
+      - R_CI=change_me
+      - R_CS=change_me
+      - R_UA=DadBard
+    ports:
+    - "8000:8000"
+    volumes:
+    - .:/app

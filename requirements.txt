@@ -1,0 +1,3 @@
+fastapi==0.49.0
+praw==6.5.1
+uvicorn
