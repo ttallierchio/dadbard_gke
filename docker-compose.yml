@@ -6,10 +6,22 @@ services:
         dockerfile: ./docker.dockerfile
     entrypoint: /bin/bash
     environment: 
-      - R_CI=change_me
-      - R_CS=change_me
+      - R_CI=20Vyy1jaiUtFow
+      - R_CS=qVqTXGlZn11twTUEUrC7D8OlaBw
       - R_UA=DadBard
     ports:
     - "8000:8000"
     volumes:
     - .:/app
+  dadbard-run:
+    build:
+      dockerfile: ./docker.dockerfile
+      context: .
+    environment: 
+      - R_CI=20Vyy1jaiUtFow
+      - R_CS=qVqTXGlZn11twTUEUrC7D8OlaBw
+      - R_UA=DadBard      
+    ports:
+    - "8000:8000"
+    volumes:
+    - .:/app    
