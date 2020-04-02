@@ -46,6 +46,6 @@ class Joke():
 				sub = self.reddit.subreddit('DMDadJokes').random()
 				result = {"joke":sub.title,
 					  	  "punch_line":sub.selftext}
-			return result
+			return str(result)
 		except:
 			raise Exception("unable to generate Joke")
