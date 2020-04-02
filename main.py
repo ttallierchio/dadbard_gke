@@ -5,10 +5,9 @@ app = FastAPI()
 
 
 @app.get('/api/joke')
-def get():
+def get(request):
     j = Joke()
     return j.GetJokePair()
-
 @app.get('/api/os_environ')
 def get():
     l = os.environ
